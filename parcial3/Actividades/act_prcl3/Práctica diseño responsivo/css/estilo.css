@@ -1,0 +1,70 @@
+/* Práctica diseño responsivo, Yaim Gerardo Serrano Corral, 2AmPr */
+body {
+    background-color: #CCDBD6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center; 
+    font-size: 2em;
+}
+h2 {
+    text-align: center;
+    color: darkgreen;
+    font-size: 1.4em;
+}
+p {
+    font-size: 0.9em;
+}
+img {
+    border-radius: 50px; /* puse que las imagenes tengan borde de 50 pixeles */
+    max-width: 100%; /* para no exceder el ancho maximo */
+    height: auto; /* para que la altura de la imagen se ajuste proporcional al ancho */
+}
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: honeydew;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+th {
+    background-color: #f2f2f2;
+}
+hr {
+    border: none;
+    border-top: 5px solid gray;
+    width: 100%;
+    margin-top: 20px;
+}
+.container { /* para alinear al centro lo que hay dentro de container */
+    text-align: center;
+}
+button {
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* ajustar tamaño de la letra del boton */
+}
+    /* este ya es un estilo para las pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    /* cuando la pantalla tenga un ancho máximo de 768 píxeles, el tamaño de h1 se tiene que ajustar a 1.5 em, y asi con el h2 y el boton */
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 1em;
+    }
+}
